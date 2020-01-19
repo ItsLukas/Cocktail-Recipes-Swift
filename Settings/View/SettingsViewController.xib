@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="Settings" customModuleProvider="target">
+            <connections>
+                <outlet property="chooseFilterView" destination="Hvo-yA-rsW" id="Y9X-98-RG7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="X0Y-CB-vnu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter letter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsy-rv-LyV">
+                    <rect key="frame" x="16" y="76" width="91" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hvo-yA-rsW">
+                    <rect key="frame" x="0.0" y="112.5" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Choose one fliter letter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZY-cM-Nmb">
+                            <rect key="frame" x="16" y="0.0" width="382" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The cocktails will be filtered according to the chosen letter (First will be selected if provided more)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbA-Dm-JSB">
+                            <rect key="frame" x="16" y="21" width="382" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WZY-cM-Nmb" secondAttribute="trailing" constant="16" id="2ne-Qc-fm6"/>
+                        <constraint firstAttribute="height" constant="50" id="MJJ-SY-U4z"/>
+                        <constraint firstAttribute="trailing" secondItem="jbA-Dm-JSB" secondAttribute="trailing" constant="16" id="MP9-mj-X0f"/>
+                        <constraint firstItem="jbA-Dm-JSB" firstAttribute="leading" secondItem="Hvo-yA-rsW" secondAttribute="leading" constant="16" id="Nt2-dL-kf3"/>
+                        <constraint firstItem="jbA-Dm-JSB" firstAttribute="top" secondItem="WZY-cM-Nmb" secondAttribute="bottom" constant="3" id="Vnq-QL-NXj"/>
+                        <constraint firstItem="WZY-cM-Nmb" firstAttribute="top" secondItem="Hvo-yA-rsW" secondAttribute="top" id="b0o-g7-lcf"/>
+                        <constraint firstAttribute="bottom" secondItem="jbA-Dm-JSB" secondAttribute="bottom" id="qOb-wl-h9T"/>
+                        <constraint firstItem="WZY-cM-Nmb" firstAttribute="leading" secondItem="Hvo-yA-rsW" secondAttribute="leading" constant="16" id="qcW-aA-zag"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Nsy-rv-LyV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="1nn-f5-6cS"/>
+                <constraint firstItem="Hvo-yA-rsW" firstAttribute="top" secondItem="Nsy-rv-LyV" secondAttribute="bottom" constant="16" id="Zf1-Ih-tTw"/>
+                <constraint firstItem="Nsy-rv-LyV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="bgF-ob-Zzm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hvo-yA-rsW" secondAttribute="trailing" id="mda-en-Cnt"/>
+                <constraint firstItem="Hvo-yA-rsW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sLq-E1-dRN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </view>
+    </objects>
+</document>

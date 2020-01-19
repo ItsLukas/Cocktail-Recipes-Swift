@@ -1,0 +1,6 @@
+framework module Pods_Cocktail_Recipes_iOSTests {
+  umbrella header "Pods-Cocktail-Recipes-iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
